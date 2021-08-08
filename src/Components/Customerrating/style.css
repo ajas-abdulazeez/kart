@@ -1,0 +1,69 @@
+
+.customers_rating{
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.rating_header{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.rated_user_profile{
+    width: 50px;
+    height: 50px;
+
+}
+
+.rated_info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.user_ratings{
+    display: flex;
+    align-items: flex-end;
+    height: 20px;
+}
+.rated_short_details{
+    display: inline-block;
+    margin-left: 10px;
+    width: fit-content;
+}
+
+.rating_description{
+    color:#F2F2F4;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    border:solid 1px #70707055;
+    font-size: 14px;
+    font-family: 'ROBOTO';
+    font-weight: normal;
+    width:calc(100% - 50px );
+
+}
+.rated_username{
+    color:#F2F2F4;
+    font-family: 'ROBOTO';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rated_time{
+    color:#AB9B9A;
+    font-family: 'ROBOTO';
+    font-weight: normal;
+
+}
+
+.rated_user_image{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+

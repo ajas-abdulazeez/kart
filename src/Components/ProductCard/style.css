@@ -1,0 +1,70 @@
+.product_card_container{
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 80%;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+
+
+.product_card_image{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+   
+
+}  
+
+
+.product_card_name{
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+
+.product_card_price{
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #D4BEBE;
+}
+
+
+.product_card_info{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+
+.product_card_sellerinfo{
+    display: flex;
+    padding-bottom: 15px;
+}
+
+
+.product_card_sellerName{
+    text-decoration: underline;
+}
+
+
+.product_card_footerDetails{
+    font-size: 14px;
+    display: flex;
+}
+
+
+.product_card_location{
+    
+    display: flex;
+    float: right;
+    margin-left: auto;
+}
+.product_card_locationicon{
+    padding-right: 5px;
+}

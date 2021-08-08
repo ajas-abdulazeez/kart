@@ -1,0 +1,24 @@
+:root{
+    --primary-color: #1e8ad6;
+    --secondary-color: #f9d800;
+    --dark-background: #36393f;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+html,body{
+    height: 100%;
+    background-color: var(--dark-background);
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}

@@ -1,0 +1,75 @@
+.seller_rating_section{
+    display: inline-block;
+}
+
+.stock_details{
+    display:flex;
+    align-items: flex-end;
+}
+
+.quantity_instock_text{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+.quantity_details{
+    color: #C8C0C0;
+    font-size:80px;
+    font-weight: bold;
+    font-family: 'ROBOTO';
+}
+
+.in_stock_heading{
+    font-size: 27px;
+    color: #1EBAD6;
+    font-weight: bold;
+    font-family: 'ROBOTO';
+}
+
+.sold_details{
+    color:#C0C0C8;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'ROBOTO';
+}
+
+.seller_rating_text{
+    color:#F2F2F4;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'ROBOTO';
+
+}
+.seller_rating_stars{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating_values{
+    font-weight: normal;
+    font-size: 14px;
+    color:#AB9B9A;
+    padding-left:5px ;
+}
+
+.seller_review_rating_stars{
+    display: flex;
+}
+
+.sold_by_details{
+    color: #AB9B9A;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'ROBOTO';
+    display: flex;
+    justify-content: center;
+
+}
+
+.bluetext{
+    color: #1EBAD6;
+    padding-left: 3px;
+    padding-right: 2px;
+}
