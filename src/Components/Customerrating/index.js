@@ -32,7 +32,7 @@ const Customerrating = ({costomerData}) => {
             </div>
 
 
-
+{/* akash */}
         </div>
     )
 }
