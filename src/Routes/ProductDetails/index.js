@@ -8,6 +8,26 @@ import ProductCard from "../../Components/ProductCard"
 
 
 const ProductDetails = () => {
+
+    const costomer_rating = [
+        {
+            name: "Ajas",
+            time: "10:10"
+        },
+        {
+            name: "Ashik",
+            time: "10:10"
+        },
+        {
+            name: "Akash",
+            time: "10:10"
+        },
+        {
+            name: "Adharsh",
+            time: "10:10"
+        }
+    ]
+
     return (
         <div className="proucts_container">
 
@@ -92,12 +112,9 @@ const ProductDetails = () => {
                 <div className="customer_rating_figures"> 4.2 out of 5 stars    <span className="rating_numerical_value">654</span> ratings </div>
                 <div className="cutomer_reviews">
                    
-                     <Customerrating/>
-                     <Customerrating/>
-                     <Customerrating/>
-                     <Customerrating/>
-                     <Customerrating/>
-                     <Customerrating/>
+                   {costomer_rating.map(data => (
+                       <Customerrating costomerData={data}/>
+                   ))}
 
                 </div>
             </div>

@@ -4,7 +4,6 @@ import {
   Route
 } from "react-router-dom";
 
-import ScrollToTop from "react-scroll-to-top";
 import ChatBox from "./Routes/ChatBox";
 import ChatList from "./Routes/ChatList";
 import Home from "./Routes/Home";
@@ -15,7 +14,6 @@ import SignUp from "./Routes/SignUp";
 const App = () => {
   return (
     <Router>
-      <ScrollToTop/>
       <Switch>
         <Route path="/details" component={ProductDetails}/>
         <Route path="/signin" component={SignIn}/>
