@@ -1,0 +1,12 @@
+.categoryimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+
+}

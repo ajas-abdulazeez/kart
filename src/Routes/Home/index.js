@@ -1,151 +1,103 @@
-import "./style.css";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import ProductCard from  "../../Components/ProductCard"
 
+import "./style.css";
+import CategoryCard from "../../Components/CategoryCard";
 const Home = () => {
     return (
-        <div className="container">
+        <div className="mainContainer">
+
             <Header></Header>
-            <div className="testing">
-            South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.
-             South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.
-             South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.
-             South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.
-             South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.
-             South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.
-             South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.
-             South Park: The Stick of Truth is a 2014 rol
-            e-playing video game developed by Obsidian Entertainment in col
-            laboration with South Park Digital Studios, and published by Ubisoft f
-            or Microsoft Windows, PlayStation 3, and Xbox 360. Based on the American
-            adult animated television series South Park, the game features
-             whimsical fanta
-             sy role-playing. As the New Kid, the player can 
-             freely explore the town of South Par
-             k with a supporting party of characters, fighting
-              aliens, Nazi zombies, and gnomes. The 
-             visuals replicate the aesthetic of the television series
-             . South Park creators Trey Parker and Matt Stone (both pictured) 
-             wrote the game's script, consulted on the design and voiced many of
-              the characters, as in the television program. Reviewers praised the c
-              omedic script and authentic visual style, but some faulted the game over technical i
-            ssues and a lack of challenging combat. A sequel, South Park: The Fractured
-             but Whole, was released in 2017.</div>
+            <div className="sellBanner">
+                <div className="bannerInfo">
+
+                </div>
+                <div className="sellButton">
+                    SELL
+
+                </div>
+
+
+
+            
+            </div>
+            <div className="categorySection">
+                <div className="categorySection_header">
+                    <div className="categorySection_explore">
+                        Explore Categories
+                    </div>
+                    <div className="categorySection_more">
+                        more
+                    </div>
+
+                </div>
+                <div className="categorySection_iconsList">
+                    <CategoryCard></CategoryCard>
+                    <CategoryCard></CategoryCard>
+                    <CategoryCard></CategoryCard>
+                    <CategoryCard></CategoryCard>
+
+
+
+
+
+                </div>
+            </div>
+            <div className="location_header">
+                
+                <div className ="location_header_current">
+                    Los Angeles,CA
+
+                </div>
+                <div className = "location_header_change">
+                    change
+
+                </div>
+                
+            </div>
+            <div className="featured_banner">
+                Featured Products
+
+            </div>
+            <div className="featured_list">
+
+                <div className="featured_list_product">
+                    <ProductCard></ProductCard>
+                </div>
+                <div className="featured_list_product">
+                    <ProductCard></ProductCard>
+                </div>
+                <div className="featured_list_product">
+                    <ProductCard></ProductCard>
+                </div>
+                <div className="featured_list_product">
+                    <ProductCard></ProductCard>
+                </div>
+                <div className="featured_list_product">
+                    <ProductCard></ProductCard>
+                </div>
+
+
+
+
+
+               
+                
+
+            </div>
+            <div className="footerSpace"></div>
             <Footer></Footer>
+            
+
+
+
+
+
+        
         </div>
-    
+
+        
     )
 }
 

@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #2C2F33;
-    position: absolute;
+    position: fixed;
     top: 0%;
 }
 
@@ -83,7 +83,7 @@
     height: 80px;
     background-color: #2C2F33;
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     
 }

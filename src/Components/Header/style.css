@@ -7,7 +7,7 @@
 }
 
 .header_container{
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between; 
     margin: auto;
@@ -17,10 +17,12 @@
 .dropdown{
     cursor: pointer;
     display: inline-block;
-    width: 35px;
+    width: 50px;
     margin-top: auto;
     margin-bottom: auto;
-  }
+    padding-left: 15px;
+    
+}
 
 
 .bar1{
@@ -28,7 +30,7 @@
     height: 4px;
     background-color: rgb(255, 255, 255);
     margin: 6px 0;
-  }
+}
 
   .search_bar_and_name{
       display: flex;
@@ -36,28 +38,57 @@
       margin-top: auto;
       margin-bottom: auto;
       width: fit-content;
+      padding-right: 10px;
       
 
-  }
+}
   .search{
       width: fit-content;
       height: fit-content;
       cursor: pointer;
 
-  }
-  .header_profile
-  {
-    width: 35px;
-    height: 35px;
-    margin-left: 15px;
-    cursor: pointer;
+}
+.header_profile{
+  width: fit-content;
+  height: fit-content;
+  margin-left: 15px;
+  cursor: pointer;
+}
 
-  }
+.searchsection{
 
-  .cls-1 , .cls-2{
-    fill: black;
-    fill-rule: evenodd;
-    
-  }
-
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+  position: absolute;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  display: none;
   
+  
+}
+.back_button{
+  margin-left: 15px;
+
+
+}
+.Searh_form{
+  border: none;
+  width: 70%;
+  padding-left: 10px;
+  height: 50%;
+  
+  
+}
+input[type=search]{
+  width: 100%;
+  border: none;
+  height: 100%;
+  font-size: large;
+  color: black;
+  border-bottom: 1px black solid;
+  outline: none;
+  
+}

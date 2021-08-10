@@ -1,6 +1,7 @@
 import "./style.css";
 import searchicon from './search.svg';
-import Profileicon from './profile.js';
+import profileicon from './profile.svg';
+import backbutton from './backButton.svg'
 
 function Header() {
     return (
@@ -12,22 +13,39 @@ function Header() {
                         <div className="bar1"></div>
                         <div className="bar1"></div>
                         <div className="bar1"></div>  
+                        
                     </div>
+            <div className="searchsection">
+                
+                <img className='back_button' src={backbutton} alt="backButton_search" height="35px" width= "30px"/>
+
+                <div className="Searh_form">
+                
+                <input type="search" placeholder="Search. . "></input>
+                
+
+
+                </div>
+
+            </div>
 
                 <div className="search_bar_and_name">
 
                     <div className="search">
-                        <img src={searchicon} alt="search_icon" height="35px" width= "30px"/>
+                        <img  src={searchicon} alt="search_icon" height="35px" width= "30px"/>
                     </div>
 
                     <div className="header_profile">
-                            <Profileicon/>
+                            <img src={profileicon} alt="profile_icon" height="35px" width= "35px"/>
                     </div>
 
                 </div>
 
             </div>
-       </div>
+           
+
+
+        </div>
     )
 }
 
