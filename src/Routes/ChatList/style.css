@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0; 
+    box-sizing:border-box ;
+}
+
+.chatlist_container{
+    height: 100%;
+    width: 100%;
+}
+
+.chatlist_header{
+    display: flex;
+    padding: 5px;
+    padding-top: 15px;
+    width: 375px;
+    height: 63px;
+    font-size: 19pt;
+    border-bottom: 2px solid;
+}
+
+.search_icon{
+margin-left: 40%;
+}
+
+.return_icon{
+    margin-right: 5px;
+}
+
+.chat_body{
+    padding: 20px 0px 0px 20px;
+    margin-top: 20px;
+
+}
+
+.chat_content{
+    display: flex;
+}
+
+.profile_pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+.profile_info{
+    padding: 2px;
+    margin-left: 20px;
+}
+
+.name{
+    font-size: x-large;
+    color: #1EBAD6;
+}
+
+.online{
+    color: #F2F2F4;
+    font-size: smaller;
+}
