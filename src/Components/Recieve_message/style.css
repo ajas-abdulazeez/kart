@@ -1,30 +1,30 @@
-.send_message_block{
+.recieve_message_block{
     display: inline-block;
     max-width: 70%;
-    justify-content: right;
+    justify-content: left;
 
 
 }
 
-.send_message_body{
+.recieve_message_body{
     color:#F2F2F4;
     font-size: 19px;
     font-family: 'ROBOTO';
     font-weight: normal;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: 5px;
+    margin-left: 5px;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-top: 3px;
     margin-bottom: 3px;
-    background-color: #36393F;
-    border-radius: 20px 20px 0px 20px;
+    background-color: #3BA55D;
+    border-radius: 0px 20px 20px 20px;
     width: auto;
     height: fit-content;
 }
 
-.message_sent_time{
+.message_recieve_time{
     color:#36393F;
     font-size: 14px;
     font-family: 'ROBOTO';
