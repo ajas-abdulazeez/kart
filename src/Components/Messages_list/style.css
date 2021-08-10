@@ -1,0 +1,29 @@
+
+
+.chat_content{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.profile_pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+.profile_info{
+    padding: 2px;
+    margin-left: 20px;
+}
+
+.name{
+    font-size: x-large;
+    color: #1EBAD6;
+}
+
+.online{
+    color: #F2F2F4;
+    font-size: smaller;
+}
