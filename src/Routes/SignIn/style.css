@@ -1,0 +1,173 @@
+.user-input-wrp {
+	position: relative;
+	height: fit-content;
+	width: 50%;
+}
+.user-input-wrp .inputText{
+	width: 100%;
+	outline: none;
+	border:none;
+	font-size: 20px;
+	margin-top: 10px;
+	
+ 	box-shadow: none;
+	background-color: var(--dark-background);
+	
+}
+.user-input-wrp .inputText:focus{
+	/* border-color: blue; */
+	border-width: medium medium 2px;
+	
+	
+}
+.user-input-wrp .floating-label {
+	position: absolute;
+	pointer-events: none;
+	top: 18px;
+	left: 10px;
+	transition: 0.2s ease all;
+}
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:focus):valid ~ .floating-label{
+	top: 0px;
+	left: 10px;
+	font-size: 13px;
+	opacity: 1;
+	width: fit-content;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.inputText {
+	background-color: var(--dark-background);
+	border:none;
+	outline: none;
+	
+}
+.Username_box {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 365px;
+	display: inline-block;
+}
+
+.welcome {
+	color: #F2F2F4;
+	font-family: 'ROBOTO';
+	font-weight:bold;
+	width: 189px;
+	height: 51px;
+	font-size: 34px;
+	
+}
+
+.signin_text {
+	font-family: 'ROBOTO';
+	font-weight:lighter;
+}
+
+.user_container {
+	width: 284px;
+	height: 45px;
+	border: 1px solid #1EBAD6;
+	margin: 22px auto;
+	border-radius: 22.5px;
+	position: relative;
+}
+
+.user_icon {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.main_text {
+	padding: 36px;
+	margin-top: 207px;
+}
+
+.forgetpassword {
+	text-align: end;
+	padding: 0 24px;
+	font-size: 17px;
+	color: #F2F2F4;
+	font-family: 'ROBOTO';
+	font-weight: lighter;
+}
+
+.Login_btn {
+	width: 241px;
+	height: 44px;
+	border-radius: 22px;
+	background-color: #1EBAD6;
+	border: #1EBAD6;
+	border: 1px;
+	font-size: 22px;
+	font-family: 'ROBOTO';
+	font-weight:lighter;
+}
+
+.button {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	margin-top: 19px;
+}
+
+.login_fb_button {
+	width: 241px;
+	height: 44px;
+	border-radius: 22px;
+	border: 1px solid #F2F2F4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 29px;
+}
+
+.login_text {
+	font-family: 'ROBOTO';
+	font-weight:bold;
+	font-size: 17px;
+	color: #F2F2F4;
+	margin-left: 26px;
+}
+
+.fb_icon {
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+.create_here {
+	width: 241px;
+	height: 31px;
+	text-align: center;
+	margin-top: 33px;
+	font-family: 'ROBOTO';
+	font-weight:lighter;
+	font-size: 17px;
+}
+
+.Create {
+	color: #1EBAD6;
+}
+
+.floating-label {
+	display: block;
+	font-family: 'ROBOTO';
+	font-weight: lighter;
+	color: #F2F2F4;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 5px;
+	background-color: #383A4A;
+	left: 50px;
+}
+
+.signup_with_text {
+	margin-right: 4px;
+	margin-left: 20px;
+	
+}

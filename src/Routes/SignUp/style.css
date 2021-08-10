@@ -1,0 +1,75 @@
+.name_container {
+    width: 80%;
+	height: 45px;
+	border: 1px solid #1EBAD6;
+	margin: 22px auto;
+	border-radius: 22.5px;
+	display: flex;
+}
+
+.get_started {
+    height: 42px;
+    font-family: 'ROBOTO';
+	font-weight:bold;
+    font-size: 32px;
+    color: #F2F2F4;
+    margin-left: 35px;
+    margin-top: 144px;
+}
+
+.create_account_txt {
+    height: 32px;
+    font-family: 'ROBOTO';
+    font-weight: Medium;
+    margin-left: 32px;
+    margin-top: 45px;
+}
+
+.Create_account_btn {
+    height: 44px;
+    width: 284px;
+    border-radius: 22px;
+    background-color: #1EBAD6;
+    color: #F2F2F4;
+    border: 1px solid #1EBAD6;
+    font-size: 17px;
+    font-family:'ROBOTO';
+    font-weight: bold;
+}
+
+.signup_fb_button {
+    width: 241px;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid #F2F2F4;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    font-size: 16px;
+    font-family:'ROBOTO';
+    font-weight: bold;
+    color: #F2F2F4;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+.login_here {
+    width: 241px;
+    height: 31px;
+    font-size: 17px;
+    color: #F2F2F4;
+    font-family:'ROBOTO';
+    font-weight:lighter;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.here {
+    color: #1EBAD6;
+
+}
+
+.fb_icon1 {
+	margin-top: 4px;
+	margin-left: 4px;
+}
