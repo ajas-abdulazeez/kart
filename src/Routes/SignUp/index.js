@@ -66,7 +66,7 @@ const SignUp = () => {
                    
                       <input type="Password" class="inputText"  required />
         
-                      <span className="floating-label">************</span>
+                      <span className="floating-label">Password</span>
                     </div>
                 </div>
 
