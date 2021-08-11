@@ -8,7 +8,6 @@ import Carsicon from "./cars.svg";
 
 import "./style.css";
 import CategoryCard from "../../Components/CategoryCard";
-import Close from "./close.js"
 
 
 const Home = () => {
