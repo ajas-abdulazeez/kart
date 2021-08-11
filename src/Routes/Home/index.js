@@ -87,21 +87,20 @@ const Home = () => {
             </div>
             <div className="featured_list">
 
-                <div className="featured_list_product">
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+            
+               
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+                
+               
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+   
+              
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+             
+           
                     <ProductCard></ProductCard>
-                </div>
+
 
 
 
