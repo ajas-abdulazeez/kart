@@ -21,8 +21,9 @@ const App = () => {
         <Route path="/signup" component={SignUp}/>
         <Route path="/chatlist" component={ChatList}/>
         <Route path="/chatbox" component={ChatBox}/>
-        <Route path="/" component={Home}/>
         <Route path="/uploadform" component={ProductForm}/>
+        <Route path="/" component={Home}/>
+       
       </Switch>
     </Router>
   );
