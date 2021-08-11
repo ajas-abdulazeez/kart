@@ -10,6 +10,7 @@ import Home from "./Routes/Home";
 import ProductDetails from "./Routes/ProductDetails";
 import SignIn from "./Routes/SignIn";
 import SignUp from "./Routes/SignUp";
+import ProductForm from "./Routes/ProductUploadForm";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/chatlist" component={ChatList}/>
         <Route path="/chatbox" component={ChatBox}/>
         <Route path="/" component={Home}/>
+        <Route path="/uploadform" component={ProductForm}/>
       </Switch>
     </Router>
   );
