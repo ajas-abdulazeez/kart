@@ -37,6 +37,10 @@
     font-weight: bold;
 }
 
+.Create_account_btn:hover {
+    background-color: blue;
+}
+
 .signup_fb_button {
     width: auto;
     height: 44px;
