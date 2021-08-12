@@ -9,7 +9,7 @@
     min-width: 80%;
     width: 90%;
     font-family: 'Roboto', sans-serif;
-    height: 480px;
+    height: 550px;
 
     
 }
@@ -21,7 +21,7 @@
     align-items: center;
     display: flex;
     width:100%;
-    height: calc(80% - 157px);
+    height: calc(100% - 157px);
     margin-top: auto;
     margin-bottom: 15px;
 

@@ -107,3 +107,13 @@
 .footerSpace{
     height: 60px;
 }
+
+.recently_added_perks{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

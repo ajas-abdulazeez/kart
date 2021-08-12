@@ -178,8 +178,10 @@
     height: auto;
     width: 100%;
     overflow: scroll;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .div_arrow{
