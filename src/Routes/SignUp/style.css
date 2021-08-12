@@ -27,7 +27,7 @@
 
 .Create_account_btn {
     height: 44px;
-    width: 284px;
+    width: auto;
     border-radius: 22px;
     background-color: #1EBAD6;
     color: #F2F2F4;
@@ -37,8 +37,12 @@
     font-weight: bold;
 }
 
+.Create_account_btn:hover {
+    background-color: blue;
+}
+
 .signup_fb_button {
-    width: 241px;
+    width: auto;
     height: 44px;
     border-radius: 22px;
     border: 1px solid #F2F2F4;
@@ -54,7 +58,7 @@
 }
 
 .login_here {
-    width: 241px;
+    width: auto;
     height: 31px;
     font-size: 17px;
     color: #F2F2F4;
@@ -62,6 +66,7 @@
     font-weight:lighter;
     margin-top: 28px;
     margin-left: 20px;
+    text-align: center;
 }
 
 .here {
@@ -71,5 +76,6 @@
 
 .fb_icon1 {
 	margin-top: 4px;
-	margin-left: 4px;
+	margin-left: auto;
+    margin-right: 1px;
 }

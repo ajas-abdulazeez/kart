@@ -1,18 +1,18 @@
 import "./style.css";
-import mobileicon from './mobile.svg' 
+// import mobileicon from './mobile.svg' 
 
 
 
-function CategoryCard() {
+function CategoryCard({CategoryFunc}) {
     return(
         <div className="Categorylist_details">
             <div className="categoryimage">
-                <img  src={mobileicon} alt="search_icon" height="50px" />
+                {CategoryFunc.CategoryImage}
 
 
             </div>
             <div className="category_name">
-                Mobiles
+                {CategoryFunc.CategoryName}
 
             </div>
         </div>
