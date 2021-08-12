@@ -5,6 +5,7 @@ import Recievemessage from "../../Components/Recieve_message";
 import Backbutton from "./goback.svg";
 import Pinbutton from "./pin.svg"
 import Micbutton from "./mic_icon.svg"
+import Close_selected from "./close_selected.svg"
 import "./style.css";
 
 const ChatBox = () => {
@@ -28,6 +29,20 @@ const ChatBox = () => {
             </div>
           </div>
           <div className="chatbox_body">
+
+
+            <div className="selcted_product_chat_session">
+              <div className="selcted_product_chat_session_header">
+                <div className="selcted_product_chat_session_heading">Selected item</div>
+                <div className="selcted_product_chat_session_close">
+                   <img src={Close_selected} alt=" close"/>
+                </div>
+              </div>
+              <div className="selcted_product_chat_session_container">
+              RiaTech Large Size 
+              (600mm x 300mm x 2mm)
+              </div>
+            </div>
 
           <Sendmessage/>
           <Sendmessage/>

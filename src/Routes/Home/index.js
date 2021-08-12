@@ -1,10 +1,39 @@
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import ProductCard from  "../../Components/ProductCard"
+import ProductCard from  "../../Components/ProductCard";
+import Mobileicon from "./mobile.svg";
+import Clothesicon from "./clothing.svg";
+import Foodsicon from "./foods.svg";
+import Carsicon from "./cars.svg";
 
 import "./style.css";
 import CategoryCard from "../../Components/CategoryCard";
+
+
 const Home = () => {
+
+
+    const CategoryData = [
+        {
+            CategoryImage:<img src={Mobileicon} alt=""  height="45px"/>,
+            CategoryName: "Mobile"
+        },
+        {
+            CategoryImage: <img src={Clothesicon} alt=""  height="45px"/>,
+            CategoryName: "Clothing"
+        },
+        {
+            CategoryImage: <img src={Carsicon} alt=""  height="45px"/>,
+            CategoryName: "Cars"
+        },
+        {
+            CategoryImage: <img src={Foodsicon} alt=""  height="45px"/>,
+            CategoryName: "Food"
+        }
+    ]
+
+
+
     return (
         <div className="mainContainer">
 
@@ -33,14 +62,10 @@ const Home = () => {
 
                 </div>
                 <div className="categorySection_iconsList">
-                    <CategoryCard></CategoryCard>
-                    <CategoryCard></CategoryCard>
-                    <CategoryCard></CategoryCard>
-                    <CategoryCard></CategoryCard>
-
-
-
-
+                    
+                    {CategoryData.map(data => (
+                       <CategoryCard CategoryFunc={data}/>
+                   ))}
 
                 </div>
             </div>
@@ -62,21 +87,20 @@ const Home = () => {
             </div>
             <div className="featured_list">
 
-                <div className="featured_list_product">
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+            
+               
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+                
+               
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+   
+              
                     <ProductCard></ProductCard>
-                </div>
-                <div className="featured_list_product">
+             
+           
                     <ProductCard></ProductCard>
-                </div>
+
 
 
 

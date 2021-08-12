@@ -1,7 +1,7 @@
 .user-input-wrp {
 	position: relative;
 	height: fit-content;
-	width: 50%;
+	width: 70%;
 }
 .user-input-wrp .inputText{
 	width: 100%;
@@ -97,7 +97,7 @@
 }
 
 .Login_btn {
-	width: 241px;
+	width: auto;
 	height: 44px;
 	border-radius: 22px;
 	background-color: #1EBAD6;
@@ -108,15 +108,16 @@
 	font-weight:lighter;
 }
 
+.Login_btn:hover{background-color:blue;}
+
 .button {
 	display: grid;
-	align-items: center;
-	justify-content: center;
 	margin-top: 19px;
+	padding: 0 10%;
 }
 
 .login_fb_button {
-	width: 241px;
+	width: auto;
 	height: 44px;
 	border-radius: 22px;
 	border: 1px solid #F2F2F4;
@@ -131,16 +132,17 @@
 	font-weight:bold;
 	font-size: 17px;
 	color: #F2F2F4;
-	margin-left: 26px;
+	margin-left: 25%;
 }
 
 .fb_icon {
 	margin-top: 4px;
-	margin-left: 4px;
+	margin-left: auto;
+	margin-right: 1px;
 }
 
 .create_here {
-	width: 241px;
+	width: auto;
 	height: 31px;
 	text-align: center;
 	margin-top: 33px;
