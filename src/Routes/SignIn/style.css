@@ -57,7 +57,7 @@
 	color: #F2F2F4;
 	font-family: 'ROBOTO';
 	font-weight:bold;
-	width: 189px;
+	width: auto;
 	height: 51px;
 	font-size: 34px;
 	
@@ -132,7 +132,7 @@
 	font-weight:bold;
 	font-size: 17px;
 	color: #F2F2F4;
-	margin-left: 25%;
+	margin-left: auto;
 }
 
 .fb_icon {
@@ -170,11 +170,11 @@
 
 .signup_with_text {
 	margin-right: 4px;
-	margin-left: 20px;
+	margin-left: auto;
 	
 }
 
-@media only screen and (min-width:1080px) {
+@media only screen and (min-width:750px) {
 	.main {
 		display: flex;
 		justify-content: center;
@@ -189,7 +189,7 @@
 	}
 
 	.welcome {
-		font-size: 60px;
+		font-size: 50px;
 	}
 
 	.sigin_text {
@@ -198,8 +198,24 @@
 		margin-left: 5px;
 	}
 
+	.login_text {
+		margin-left: auto;
+	}
+
 	.main_text {
 		margin-top: 260px;
 		margin-left: 50px;
+	}
+
+	.contaier_box{
+		transform: translatey(20%);
+		width: 50%;
+		margin-left: 50px;
+	}
+}
+
+@media only screen and (min-width:1080px) {
+	.welcome {
+		font-size: 60px;
 	}
 }

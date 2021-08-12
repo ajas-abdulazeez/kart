@@ -8,7 +8,9 @@ import fbicon from './facebook-132.svg'
 
 const SignUp = () => {
     return (
-        <div>
+        <div className="main">
+
+          <div className="left_container">
 
             <div className="get_started">
                Let's Get Started
@@ -16,7 +18,7 @@ const SignUp = () => {
             <div className="create_account_txt">
                Create Account
             </div>
-
+          </div>
             <div className="contaier_box">
                 <div className="name_container">
                    <div className="user_icon">
