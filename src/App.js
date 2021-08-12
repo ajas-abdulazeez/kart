@@ -10,6 +10,7 @@ import Home from "./Routes/Home";
 import ProductDetails from "./Routes/ProductDetails";
 import SignIn from "./Routes/SignIn";
 import SignUp from "./Routes/SignUp";
+import ProductForm from "./Routes/ProductUploadForm";
 
 const App = () => {
   return (
@@ -20,7 +21,9 @@ const App = () => {
         <Route path="/signup" component={SignUp}/>
         <Route path="/chatlist" component={ChatList}/>
         <Route path="/chatbox" component={ChatBox}/>
+        <Route path="/uploadform" component={ProductForm}/>
         <Route path="/" component={Home}/>
+       
       </Switch>
     </Router>
   );

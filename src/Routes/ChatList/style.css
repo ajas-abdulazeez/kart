@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0; 
+    box-sizing:border-box ;
+}
+
+.chatlist_container{
+    height: 100%;
+    width: 100%;
+}
+
+.chatlist_header{
+    display: flex;
+    width: 100%;
+    height: 63px;
+    font-size: 19pt;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+}
+
+.search_icon{
+    width:25px;
+    height:25px;
+    margin-bottom: auto;
+    margin-top: auto;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.return_icon{
+    margin-left: 5px;
+    padding-right:5px ;
+    cursor: pointer;
+    margin-bottom: auto;
+    margin-top: auto;
+
+}
+
+.chat_body{
+    height: auto;
+    
+
+}
