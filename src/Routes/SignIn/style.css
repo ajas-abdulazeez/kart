@@ -173,3 +173,33 @@
 	margin-left: 20px;
 	
 }
+
+@media only screen and (min-width:1080px) {
+	.main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.right_container {
+		height: 100%;
+		margin: 0 auto;
+		transform: translateY(50%);
+		width: 40%
+	}
+
+	.welcome {
+		font-size: 60px;
+	}
+
+	.sigin_text {
+		margin-top: 20px;
+		font-size: 20px;
+		margin-left: 5px;
+	}
+
+	.main_text {
+		margin-top: 260px;
+		margin-left: 50px;
+	}
+}

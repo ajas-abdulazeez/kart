@@ -9,12 +9,14 @@ const SignIn = () => {
     return (
 
       
-    <div>
+    <div className="main">
 
       <div className="main_text">
          <div className="welcome">Welcome</div>
          <div className="sigin_text">Sign in to continue</div>
       </div>
+
+      <div className="right_container">
 
       <div className="name_container">
                    <div className="user_icon">
@@ -67,7 +69,7 @@ const SignIn = () => {
         </div>
 
       </div>
-
+      </div>
 
       {/* akash github testing */}
     </div>
