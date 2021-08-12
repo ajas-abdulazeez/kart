@@ -4,10 +4,10 @@ const ProductForm = () => {
     return (
      <div>
          <h1>Product Details</h1>
-        <div className="productname">Name of Product 
+        <div className="productname">Name of Product <br />
             <input type="text" />
         </div>
-        <div className="product_category"> Product Category 
+        <div className="product_category"> Product Category : 
             <select name="category" id="category">
                 <option value="NULL">NULL</option>
             </select>
