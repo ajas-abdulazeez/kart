@@ -1,9 +1,9 @@
 import "./style.css";
-import product from './product.jpg';
 import Customerrating from "../../Components/Customerrating";
 import Footer from "../../Components/Footer";
 import Sellerrating from "../../Components/Sellerrating";
 import ProductCard from "../../Components/ProductCard"
+import Product_image from "../../Components/Product_details_image";
 
 
 
@@ -31,9 +31,12 @@ const ProductDetails = () => {
     return (
         <div className="proucts_container">
 
-            <div className="product_image">
-                <img src={product} alt="product_image" width="100%" height="100%"/>
+            <div className="product_image_componet">
+            <Product_image/>
+
             </div>
+
+           
             <div className="product_name">
                         RiaTech Large Size 
                         (600mm x 300mm x 2mm)

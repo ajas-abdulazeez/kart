@@ -1,0 +1,80 @@
+.product_image_component_section
+{
+    height: 100%;
+    width: 100%;
+}
+
+.scroll_bubbles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 50%;
+    top:45px;
+}
+
+.scroll_dots{
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    color:#F2F2F4;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.scroll_dots_selected{
+    border:#36393f solid 1px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color:#1EBAD6;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+  }
+
+  .prev
+  {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    left: 10px;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+  } 
+  
+  .next {
+    cursor: pointer;
+    top: 30px;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    right:10px;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .product_details_image_component{
+      height: 100%;
+      width:100%;
+      position: relative;
+      top: 0;
+  }
+
+  .product_image_scroller_div{
+      position: absolute;
+      top: 30px;
+
+  }

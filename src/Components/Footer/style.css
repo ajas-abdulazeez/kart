@@ -25,8 +25,8 @@
 }
 
 .navigation_icon{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,9 +38,10 @@
 .navigation_text{
     width: fit-content;
     height: fit-content;
-    font-size: 18px;
+    font-size: 16px;
     margin: auto;
     margin-top: 5px;
+    margin-bottom: 5px;
     font-weight: normal;
     font-family: 'Roboto';
 }

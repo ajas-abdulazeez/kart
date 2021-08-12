@@ -6,10 +6,14 @@ function ProductCard(){
 
     return(
         <div className="product_card_container">
+            <div className="centering_object">
             <div className="product_card_image">
-                 <img src={productimage} alt="product_image" width="100%"/>
+                 <img src={productimage} alt="product_image" />
             </div>
             <div className="product_card_details">
+
+                
+
                 <div className="product_card_name">
                     Razer Deathadder
                 </div>
@@ -32,7 +36,7 @@ function ProductCard(){
                         <div className="product_card_distance">1.2 kms away</div>
                     </div>
                 </div>
-                
+               </div> 
             </div>
 
         </div>
