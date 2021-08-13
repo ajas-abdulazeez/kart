@@ -169,7 +169,6 @@
 }
 
 .signup_with_text {
-	margin-right: 4px;
 	margin-left: auto;
 	
 }
@@ -214,8 +213,25 @@
 	}
 }
 
+@media only screen and (min-width:920px) {
+	.contaier_box {
+		width: 40%;
+		margin-left: 120px;
+	}
+
+	.create_account_txt {
+		font-size: 18px;
+	}
+
+}
+
 @media only screen and (min-width:1080px) {
 	.welcome {
 		font-size: 60px;
+	}
+
+	.contaier_box {
+		width: 40%;
+		margin-left: 200px;
 	}
 }
