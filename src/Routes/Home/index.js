@@ -8,6 +8,7 @@ import Carsicon from "./cars.svg";
 
 import "./style.css";
 import CategoryCard from "../../Components/CategoryCard";
+import RecentProductCard from "../../Components/RecentProductCard";
 
 
 const Home = () => {
@@ -82,9 +83,22 @@ const Home = () => {
                 
             </div>
             <div className="featured_banner">
+                Recently Added Products
+
+            </div>
+            <div className="recently_added_perks">
+                <RecentProductCard/>
+                <RecentProductCard/>
+                <RecentProductCard/>
+                <RecentProductCard/>
+            </div>
+
+            <div className="featured_banner">
                 Featured Products
 
             </div>
+
+
             <div className="featured_list">
 
                     <ProductCard></ProductCard>

@@ -32,11 +32,11 @@ function Header() {
                 <div className="search_bar_and_name">
 
                     <div className="search">
-                        <img  src={searchicon} alt="search_icon" height="35px" width= "30px"/>
+                        <img  src={searchicon} alt="search_icon" height="30px" width= "30px"/>
                     </div>
 
                     <div className="header_profile">
-                            <img src={profileicon} alt="profile_icon" height="35px" width= "35px"/>
+                            <img src={profileicon} alt="profile_icon" height="30px" width= "30px"/>
                     </div>
 
                 </div>

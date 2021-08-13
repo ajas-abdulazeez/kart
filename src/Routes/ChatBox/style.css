@@ -75,7 +75,7 @@
     height: 100%;
     width: 100%;
     display: inline-block;
-    background-color: #6C6C6C;
+    /* background-color: #6C6C6C; */
 }
 
 .chatbox_typing_section{
@@ -89,11 +89,12 @@
 }
 
 .pin_icon{
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
@@ -107,11 +108,12 @@
 }
 
 .voice_message_icon{
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 10px;
+    margin-left: 5px;
     cursor: pointer;
 
 }
@@ -129,4 +131,54 @@
     outline: none;
     
 
+}
+
+.selcted_product_chat_session{
+    width: calc( 100% - 12px);
+    height: fit-content;
+    display: inline-block;
+    background-color: #772183;
+    position: fixed;
+    top:85px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 0px 20px 20px 20px;
+
+}
+
+.selcted_product_chat_session_heading{
+    font-size: 14px;
+    font-family: 'ROBOTO';
+    font-style: normal;
+    color:#F2F2F4;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.selcted_product_chat_session_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.selcted_product_chat_session_close{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.selcted_product_chat_session_container{
+    color: #F2F2F4;
+    font-size: 16px;
+    font-family: 'ROBOTO';
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 15px;
 }

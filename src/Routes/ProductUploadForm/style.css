@@ -1,0 +1,11 @@
+h1{
+    padding: 15px 0px 0px 15px;
+}
+
+.productname{
+    font-size: larger;
+    margin-top: 15px;
+}
+#category{
+    padding-left: 5px;
+}

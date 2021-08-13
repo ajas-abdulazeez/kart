@@ -1,7 +1,7 @@
 .send_message_block{
     display: inline-block;
     max-width: 70%;
-    justify-content: right;
+    right: 10px;
 
 
 }
@@ -18,7 +18,7 @@
     padding-bottom: 8px;
     margin-top: 3px;
     margin-bottom: 3px;
-    background-color: #36393F;
+    background-color:black;
     border-radius: 20px 20px 0px 20px;
     width: auto;
     height: fit-content;

@@ -2,12 +2,7 @@
     width: 100%;
 }
 
-.product_image
-{
-    background-color: rgb(255, 255, 255);
-    height: 292px;
-    width: 100%;
-}
+
 .product_name{
     font-size: 24px;
     font-family: 'ROBOTO';
@@ -183,12 +178,20 @@
     height: auto;
     width: 100%;
     overflow: scroll;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .div_arrow{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.product_image_componet{
+        height: 292px;
+        width: 100%;
+
 }

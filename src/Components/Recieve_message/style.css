@@ -7,7 +7,7 @@
 }
 
 .recieve_message_body{
-    color:#F2F2F4;
+    color:#36393F;
     font-size: 19px;
     font-family: 'ROBOTO';
     font-weight: normal;
@@ -18,7 +18,7 @@
     padding-bottom: 8px;
     margin-top: 3px;
     margin-bottom: 3px;
-    background-color: #3BA55D;
+    background-color:#F2F2F4;
     border-radius: 0px 20px 20px 20px;
     width: auto;
     height: fit-content;
