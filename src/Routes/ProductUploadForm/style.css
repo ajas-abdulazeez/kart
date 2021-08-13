@@ -9,3 +9,41 @@ h1{
 #category{
     padding-left: 5px;
 }
+
+.basic_details {
+    padding: 20px;
+    border: 1px solid #1EBAD6;
+    height: auto;
+    margin: 0 15px;
+}
+
+.name_product_box {
+    color: blue;
+    background-color: #36393f;
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.product_category {
+    margin: 20px 0;
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.numberofstock {
+    margin: 10px 0;
+}
+
+.about_box {
+    height: 150px;
+    width: 90%;
+    background-color: antiquewhite;
+    margin-top: 5px;
+}
+
+.uploadimage {
+    margin: 10px 0;
+}
