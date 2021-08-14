@@ -11,6 +11,7 @@ import ProductDetails from "./Routes/ProductDetails";
 import SignIn from "./Routes/SignIn";
 import SignUp from "./Routes/SignUp";
 import ProductForm from "./Routes/ProductUploadForm";
+import Validation from "./Routes/Validation";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/chatlist" component={ChatList}/>
         <Route path="/chatbox" component={ChatBox}/>
         <Route path="/uploadform" component={ProductForm}/>
+        <Route path="/validation" component={Validation}/>
         <Route path="/" component={Home}/>
        
       </Switch>
