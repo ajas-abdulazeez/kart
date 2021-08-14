@@ -24,7 +24,7 @@ const ProductForm = () => {
             <div className="about">
                 About Product <br/>
                 <input className="about_box" type="text" />
-            </div>
+            </div></div>
             <div className="uploadimage">
                 Upload Image
                 <input type="image" name="Upload image" /> <input type="image" /> <input type="image" />
@@ -34,7 +34,7 @@ const ProductForm = () => {
                 <button type="submit" >Submit</button>
             </div>
 
-        </div>
+        
 
          </div>
          </div>

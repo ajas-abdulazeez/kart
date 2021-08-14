@@ -15,14 +15,16 @@ h1{
     border: 1px solid #1EBAD6;
     height: auto;
     margin: 0 15px;
+    background-color: #383A4A;
 }
 
 .name_product_box {
-    color: blue;
-    background-color: #36393f;
+    
+    background-color: #383A4A;
     height: 30px;
-    width: 200px;
+    width: 80%;
     margin-top: 5px;
+    border: 1px solid #1EBAD6;
 }
 
 .product_category {
