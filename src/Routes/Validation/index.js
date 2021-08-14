@@ -12,15 +12,10 @@ function Validation() {
                 </div>
 
                 <div className="otp_container">
+                    <input className="otp_box" type="text" id="otp" name="otp" placeholder="Enter the OTP"/>
 
-                <h1>Enter OTP</h1>
-                <div className="userInput">
-                    <input className="otp_box" type="text" id='ist' maxLength="1"  />
-                    <input className="otp_box" type="text" id='sec' maxLength="1" onKeyUp="clickEvent(this,'third')" />
-                    <input className="otp_box" type="text" id='third' maxLength="1" onKeyUp="clickEvent(this,'fourth')" />
-                    <input className="otp_box" type="text" id='fourth' maxLength="1" onKeyUp="clickEvent(this,'fifth')" />
-                    <input className="otp_box" type="text" id='fifth' maxLength="1"/>
-                </div>
+                    <button className="validate_button">Validate OTP</button>
+                    <div className="resend_otp">Resend OTP</div>
                 </div>
             </div>
         </div>
