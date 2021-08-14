@@ -8,7 +8,7 @@ import alerts_icon from './bell.svg';
 function Footer() {
     return (
        <div className="footersection">
-            <div className="footer_container">
+            <div className="footer_container_smallscreens">
 
                 <div className="navigation_tabs">
                     <div className="navigation_icon">
@@ -34,6 +34,35 @@ function Footer() {
                 </div>
 
             </div>
+
+            <div className="footer_container_largerscreens">
+
+                <div className="navigation_sections_largerscreen">
+                    <div className="navigation_largerscreens">
+                        <div className="navigation_texts_largerscreens">Home</div>
+                        <div className="navigation_texts_largerscreens">My shop</div>
+                        <div className="navigation_texts_largerscreens">About Us</div>
+
+                    </div>
+                    <div className="navigation_largerscreens">
+                        <div className="navigation_texts_largerscreens">Home</div>
+                        
+
+
+                    </div>
+                    <div className="navigation_largerscreens">
+                        <div className="navigation_texts_largerscreens">Stay connected with us</div>
+
+                        <div className="navigation_texts_largerscreens">Instagram</div>
+                        <div className="navigation_texts_largerscreens">Telegram</div>
+
+                    </div>
+                </div>
+                <div className="footer_logo_branding">LOGO</div>
+                <div className="footer_copyright">Copyrighted 2021,All rights reserved</div>
+            </div>
+
+
        </div>
     )
 }

@@ -195,3 +195,57 @@
         width: 100%;
 
 }
+
+
+
+@media only screen and (min-width: 900px) 
+{
+    .product_image_componet{
+        height: 60%px;
+        width: 55%;
+        position: relative;
+        left:0%;
+}
+
+.proucts_container{
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+
+}
+
+.media_spiller_right{
+    
+    width: 40%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.media_splitter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.product_details_about{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.cutomer_reviews{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}

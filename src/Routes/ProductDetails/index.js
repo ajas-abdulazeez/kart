@@ -31,11 +31,14 @@ const ProductDetails = () => {
     return (
         <div className="proucts_container">
 
+            <div className="media_splitter">
+
             <div className="product_image_componet">
             <Product_image/>
 
             </div>
 
+            <div className="media_spiller_right">
            
             <div className="product_name">
                         RiaTech Large Size 
@@ -66,8 +69,8 @@ const ProductDetails = () => {
 
             </div>
 
-
-
+            </div>
+            </div>
             <div className="product_details_about">
                 <div className="product_details_heading">
                 About the product
