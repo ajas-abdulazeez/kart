@@ -8,6 +8,8 @@ h1{
 }
 #category{
     padding-left: 5px;
+    background-color: #383A4A;
+    
 }
 
 .basic_details {
@@ -42,10 +44,28 @@ h1{
 .about_box {
     height: 150px;
     width: 90%;
-    background-color: antiquewhite;
+    background-color: #383A4A;
+    border: 1px solid #1EBAD6;
     margin-top: 5px;
 }
 
 .uploadimage {
     margin: 10px 0;
+}
+
+.price_box {
+    margin: 0 7px;
+    background-color: #383A4A;
+    border: 1px solid #1EBAD6;
+
+}
+
+.stock_box {
+    margin: 0 7px;
+    background-color: #383A4A;
+    border: 1px solid #1EBAD6;
+}
+
+.submitbutton {
+    background-color: #1EBAD6;
 }
