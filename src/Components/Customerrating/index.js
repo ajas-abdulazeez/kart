@@ -1,5 +1,7 @@
 import "./style.css";
 import rated_user_profile from "./user.jpg"
+import StarRatings from 'react-star-ratings';
+
 
 const Customerrating = ({costomerData}) => {
     return (
@@ -14,11 +16,8 @@ const Customerrating = ({costomerData}) => {
                         <div className="rated_info">
                             <div className="rated_username">{costomerData.name}</div>
                             <div className="user_ratings">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                <StarRatings starDimension="20px" starSpacing="3px" rating={3.6} starRatedColor="blue"/>
+                                
                             </div>
                         </div>
                 <div className="rated_time">Reviewed in India on {costomerData.time}</div>

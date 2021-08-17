@@ -8,7 +8,7 @@ function ProductCard(){
         <div className="product_card_container">
             <div className="centering_object">
             <div className="product_card_image">
-                 <img src={productimage} alt="product_image" width="100%" />
+                 <img src={productimage} alt="product_image"  width="100%" />
             </div>
             <div className="product_card_details">
 

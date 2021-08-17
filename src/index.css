@@ -21,7 +21,7 @@ html,body{
 
 .container{
     width: 100%;
-    max-width: 600px;
+    max-width: 1400px;
     /* subash? */
-    margin: auo;
+    margin: auto;
 }

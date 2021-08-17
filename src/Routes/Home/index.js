@@ -8,7 +8,7 @@ import Carsicon from "./cars.svg";
 
 import "./style.css";
 import CategoryCard from "../../Components/CategoryCard";
-import SideNavBar from "../../Components/SideNavBar";
+import RecentProductCard from "../../Components/RecentProductCard";
 
 
 const Home = () => {
@@ -37,9 +37,8 @@ const Home = () => {
 
     return (
         <div className="mainContainer">
-            <SideNavBar/>
+
             <Header></Header>
-            
             <div className="sellBanner">
                 <div className="bannerInfo">
 
@@ -50,13 +49,9 @@ const Home = () => {
                 </div>
 
 
+
             
             </div>
-           <div className="profileDropdown">
-               
-
-
-           </div>
             <div className="categorySection">
                 <div className="categorySection_header">
                     <div className="categorySection_explore">
@@ -88,10 +83,23 @@ const Home = () => {
                 
             </div>
             <div className="featured_banner">
+                Recently Added Products
+
+            </div>
+            <div className="recently_added_perks">
+                <RecentProductCard/>
+                <RecentProductCard/>
+                <RecentProductCard/>
+                <RecentProductCard/>
+            </div>
+
+            <div className="featured_banner">
                 Featured Products
 
             </div>
-            <div className="featured_list">
+
+
+            <div className="featured_list container">
 
                     <ProductCard></ProductCard>
             
@@ -105,7 +113,14 @@ const Home = () => {
                     <ProductCard></ProductCard>
              
            
-                    <ProductCard></ProductCard> 
+                    <ProductCard></ProductCard>
+
+
+
+
+
+
+               
                 
 
             </div>
