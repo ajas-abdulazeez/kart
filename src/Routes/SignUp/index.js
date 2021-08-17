@@ -34,7 +34,7 @@ const SignUp = () => {
                 </div>
 
                 <div className="name_container">
-                   <div className="user_ico">
+                   <div className="user_icon">
                      <img src={mobile} alt="" />
                    </div>
                    
@@ -46,7 +46,7 @@ const SignUp = () => {
                     </div>
                 </div>
 
-                {/* <div className="name_container">
+                <div className="name_container">
                    <div className="user_icon">
                      <img src={verification} alt="" />
                    </div>
@@ -57,7 +57,7 @@ const SignUp = () => {
         
                       <span className="floating-label">4 digit code</span>
                     </div>
-                </div> */}
+                </div>
 
                 <div className="name_container">
                    <div className="user_icon">

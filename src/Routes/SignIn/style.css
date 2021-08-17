@@ -80,13 +80,7 @@
 .user_icon {
 	padding: 10px;
 	margin-left: 10px;
-	transform: translateY(-7%);
 }
-
-.user_ico {
-	padding: 10px;
-	margin-left: 10px;
-}	
 
 .main_text {
 	padding: 36px;
@@ -213,19 +207,9 @@
 	}
 
 	.contaier_box{
-		transform: translatey(40%);
+		transform: translatey(20%);
 		width: 50%;
 		margin-left: 50px;
-	}
-
-	.left_container {
-		margin-top: 150px;
-	}
-
-	.create_account_txt {
-		margin-left: 13%;
-		margin-top: 30px;
-		font-size: 20px;
 	}
 }
 
@@ -237,10 +221,6 @@
 
 	.create_account_txt {
 		font-size: 18px;
-	}
-
-	.main_text {
-		margin-left: 10%;
 	}
 
 }
