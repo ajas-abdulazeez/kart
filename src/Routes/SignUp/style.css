@@ -39,6 +39,7 @@
 
 .Create_account_btn:hover {
     background-color: blue;
+    transition-delay: 60ms;
 }
 
 .signup_fb_button {

@@ -30,7 +30,7 @@
 .user-input-wrp input:focus ~ .floating-label,
 .user-input-wrp input:not(:focus):valid ~ .floating-label{
 	top: 0px;
-	left: 10px;
+	left: -20px;
 	font-size: 13px;
 	opacity: 1;
 	width: fit-content;
@@ -114,7 +114,10 @@
 	font-weight:lighter;
 }
 
-.Login_btn:hover{background-color:blue;}
+.Login_btn:hover{
+	background-color:blue;
+	transition-delay:1s;
+}
 
 .button {
 	display: grid;
@@ -251,7 +254,11 @@
 	}
 
 	.contaier_box {
-		width: 40%;
+		width: 30%;
 		margin-left: 200px;
+	}
+
+	.right_container {
+		width: 30%;
 	}
 }
