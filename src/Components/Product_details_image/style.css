@@ -2,6 +2,7 @@
 {
     height: 100%;
     width: 100%;
+    position:relative;
 }
 
 .scroll_bubbles{
@@ -11,25 +12,29 @@
     position: absolute;
     height: 30px;
     width: fit-content;
-    top:45px;
+    bottom:15px;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .scroll_dots{
-    border-radius: 5px;
+    border-radius: 50%;
     height: 30px;
     width: 30px;
-    color:#F2F2F4;
+    background-color:#F2F2F4;
     display: inline-block;
     cursor: pointer;
     margin: 0 2px;
 }
 
 .scroll_dots_selected{
-    border:#36393f solid 1px;
+    border:#36393f solid 3px;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    color:#1EBAD6;
+    background-color:#1EBAD6;
     display: inline-block;
     cursor: pointer;
     margin: 0 2px;
@@ -41,12 +46,14 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    z-index: 5;
   }
 
   .prev
   {
     cursor: pointer;
     top: 50%;
+    transform: translateY(-50%);
     width: auto;
     color: white;
     font-weight: bold;
@@ -55,11 +62,13 @@
     font-size: 18px;
     border-radius: 0 3px 3px 0;
     user-select: none; 
+    z-index: 5;
   } 
   
   .next {
     cursor: pointer;
-    top: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     width: auto;
     position: absolute;
     color: white;
@@ -68,6 +77,8 @@
     font-size: 18px;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    z-index: 5;
+
   }
 
   .product_details_image_component{

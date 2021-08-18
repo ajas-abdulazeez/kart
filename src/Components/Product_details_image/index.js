@@ -1,4 +1,5 @@
 import product from './product.jpg';
+import "./style.css"
 
 
 const Product_image = () => {

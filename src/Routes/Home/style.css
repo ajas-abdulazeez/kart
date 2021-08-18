@@ -28,7 +28,7 @@
     
 }
 .categorySection{
-    width: 100%; 
+    width: 100%;
     
 
 }
@@ -118,7 +118,30 @@
     margin-bottom: 5px;
 }
 
-.product_card_container{
-    
+@media screen and (min-width: 600px){
+
+    .featured_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
+    
+@media screen and (min-width: 900px){
+
+    .featured_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    .featured_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+}
+    
