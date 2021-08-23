@@ -10,9 +10,9 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    height: 30px;
+    height: 20px;
     width: fit-content;
-    bottom:15px;
+    bottom:13px;
     z-index: 5;
     left: 50%;
     transform: translateX(-50%);
@@ -21,28 +21,28 @@
 
 .scroll_dots{
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    background-color:#F2F2F4;
+    height: 15px;
+    width: 15px;
+    border:white solid 3px;
     display: inline-block;
     cursor: pointer;
-    margin: 0 2px;
+    margin: 0 3px;
 }
 
 .scroll_dots_selected{
-    border:#36393f solid 3px;
+    border:white solid 3px;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
     background-color:#1EBAD6;
     display: inline-block;
     cursor: pointer;
-    margin: 0 2px;
+    margin: 0 3px;
 }
 
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 12px;
     position: absolute;
     top: 0;

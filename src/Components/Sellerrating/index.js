@@ -1,5 +1,5 @@
 import "./style.css";
-
+import StarRatings from 'react-star-ratings';
 
 const Sellerrating = () => {
     return (
@@ -15,12 +15,7 @@ const Sellerrating = () => {
 
             <div className="seller_rating_stars">
                 <div className="seller_review_rating_stars">
-                    <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="rating_values">( 100 ) </span>
+                <StarRatings starDimension="20px" starSpacing="3px" rating={2.6} starRatedColor="#1EBAD6"/>
                 </div>
                 <div className="total_ratings_text"> 654 reviews </div>
 

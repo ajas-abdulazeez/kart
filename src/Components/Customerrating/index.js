@@ -16,7 +16,7 @@ const Customerrating = ({costomerData}) => {
                         <div className="rated_info">
                             <div className="rated_username">{costomerData.name}</div>
                             <div className="user_ratings">
-                                <StarRatings starDimension="20px" starSpacing="3px" rating={3.6} starRatedColor="blue"/>
+                                <StarRatings starDimension="20px" starSpacing="3px" rating={3.6} starRatedColor="#1EBAD6"/>
                                 
                             </div>
                         </div>

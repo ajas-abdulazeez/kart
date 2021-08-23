@@ -2,13 +2,16 @@ import "./style.css";
 
 
 
-function SideNavBar() {
-    
-    return (
-        <div className="sidebar">
-            <div className="sidebar_close">
 
-            </div>
+
+
+function SideNavBar() {
+
+   
+    return (
+       
+        <div className="sidebar" >
+            
             <div className="sidebar_info_block">
                 <div className="sidebar_home">
                     Home
@@ -52,4 +55,6 @@ function SideNavBar() {
 
     )
 }
+
+
 export default SideNavBar

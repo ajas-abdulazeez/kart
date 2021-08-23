@@ -12,7 +12,13 @@
    margin-top: 60px; 
    display: flex;
    align-items: center;
+   justify-content: flex-end;
 
+}
+
+.bannerInfo{
+    height: 75px;
+    width: 100%;
 }
 .sellButton{
     width: 105px;
@@ -25,6 +31,8 @@
     align-items: center;
     margin-left: auto;
     margin-right: 10px;  
+    position: absolute;
+    
     
 }
 .categorySection{

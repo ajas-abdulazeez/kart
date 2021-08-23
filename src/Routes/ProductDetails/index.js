@@ -4,6 +4,8 @@ import Footer from "../../Components/Footer";
 import Sellerrating from "../../Components/Sellerrating";
 import ProductCard from "../../Components/ProductCard"
 import Product_image from "../../Components/Product_details_image";
+import StarRatings from 'react-star-ratings';
+
 
 
 
@@ -109,11 +111,7 @@ const ProductDetails = () => {
             <div className="cutomer_rating_section">
                 <div className="customer_reviews_heading">Customer reviews</div>
                 <div className="customers_rating_bar">
-                <span class="fa fa-star customerchecked"></span>
-                <span class="fa fa-star customerchecked"></span>
-                <span class="fa fa-star customerchecked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <StarRatings starDimension="28px" starSpacing="3px" rating={2.6} starRatedColor="#1EBAD6"/>
                 </div>
                 <div className="customer_rating_figures"> 4.2 out of 5 stars    <span className="rating_numerical_value">654</span> ratings </div>
                 <div className="cutomer_reviews">

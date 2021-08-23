@@ -5,6 +5,7 @@ import Mobileicon from "./mobile.svg";
 import Clothesicon from "./clothing.svg";
 import Foodsicon from "./foods.svg";
 import Carsicon from "./cars.svg";
+import banner_image from "./kartbanner.png"
 
 import "./style.css";
 import CategoryCard from "../../Components/CategoryCard";
@@ -43,6 +44,8 @@ const Home = () => {
             <Header></Header>
             <div className="sellBanner">
                 <div className="bannerInfo">
+
+                <img src={banner_image} alt="banner"  height="100%" width="100%"/>
 
                 </div>
                 <div className="sellButton">
@@ -115,6 +118,19 @@ const Home = () => {
                     <ProductCard></ProductCard>
              
            
+                    <ProductCard></ProductCard>
+                    <ProductCard></ProductCard>
+            
+               
+                    <ProductCard></ProductCard>
+                
+            
+                    <ProductCard></ProductCard>
+
+            
+                    <ProductCard></ProductCard>
+            
+        
                     <ProductCard></ProductCard>
 
 
