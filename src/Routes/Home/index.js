@@ -9,6 +9,7 @@ import Carsicon from "./cars.svg";
 import "./style.css";
 import CategoryCard from "../../Components/CategoryCard";
 import RecentProductCard from "../../Components/RecentProductCard";
+import SideNavBar from "../../Components/SideNavBar";
 
 
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
 
     return (
         <div className="mainContainer">
+            <SideNavBar/>
 
             <Header></Header>
             <div className="sellBanner">

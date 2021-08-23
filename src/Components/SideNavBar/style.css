@@ -1,11 +1,14 @@
 .sidebar{
   
-    position: fixed;
+    
     background-color:#29292D;
     width: 80%;
     position: fixed;
     height: 100%;   
+    z-index: 1;
     display: none;
+    top: 0;
+
 }
 .sidebar_info_block{
     height: 100px;
@@ -17,4 +20,20 @@
     border-top: none;
     border-right: none;
     font-size: 17px;
+}
+
+.sidebar_close{
+    height: 60px;
+    border: dotted black 0.5px;
+    border-top: none;
+    border-right: none;
+
+
+
+}
+@media screen and (min-width: 900px){
+    .sidebar{
+        display: none;
+    }
+
 }

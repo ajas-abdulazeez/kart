@@ -39,6 +39,7 @@
       margin-bottom: auto;
       width: fit-content;
       padding-right: 10px;
+     
       
 
 }
@@ -53,6 +54,7 @@
   height: fit-content;
   margin-left: 15px;
   cursor: pointer;
+  
 }
 
 .searchsection{
@@ -92,3 +94,15 @@ input[type=search]{
   outline: none;
   
 }
+
+
+
+
+
+
+/* @media screen and (min-width: 900px){
+  .dropdown{
+      display: none;
+  }
+
+} */
