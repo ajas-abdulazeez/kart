@@ -2,10 +2,12 @@ import "./style.css";
 import productimage from "./images.png";
 import locationicon from "./location.svg";
 
-function ProductCard(){
+function ProductCard({product_name,price,product_description}){
+    
 
     return(
         <div className="product_card_container">
+            
             <div className="centering_object">
             <div className="product_card_image">
                  <img src={productimage} alt="product_image"  width="100%" />
@@ -15,7 +17,7 @@ function ProductCard(){
                 
 
                 <div className="product_card_name">
-                    Razer Deathadder
+                    {product_name}
                 </div>
                 <div className="product_card_price">₹5,199</div>
                 <div className="product_card_rating"></div>

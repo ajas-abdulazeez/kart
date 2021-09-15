@@ -1,7 +1,8 @@
 .recieve_message_block{
-    display: inline-block;
+
     max-width: 70%;
-    justify-content: left;
+    margin-left: 5px;
+
 
 
 }

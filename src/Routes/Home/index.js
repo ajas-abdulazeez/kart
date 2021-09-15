@@ -11,10 +11,23 @@ import "./style.css";
 import CategoryCard from "../../Components/CategoryCard";
 import RecentProductCard from "../../Components/RecentProductCard";
 import SideNavBar from "../../Components/SideNavBar";
+import { useEffect, useState } from "react";
 
 
 const Home = () => {
 
+    const[productList,setProductList]=useState([])
+    useEffect(()=>{
+        fetch("http://localhost:5000/api/v1/featured_products")
+        .then(result=>result.json()).then(response=>{
+            
+            if(response){
+                setProductList(response)
+            }
+        })
+        
+
+    },[])
 
     const CategoryData = [
         {
@@ -35,6 +48,7 @@ const Home = () => {
         }
     ]
 
+    
 
 
     return (
@@ -106,33 +120,8 @@ const Home = () => {
 
             <div className="featured_list container">
 
-                    <ProductCard></ProductCard>
-            
-               
-                    <ProductCard></ProductCard>
-                
-               
-                    <ProductCard></ProductCard>
-   
-              
-                    <ProductCard></ProductCard>
-             
-           
-                    <ProductCard></ProductCard>
-                    <ProductCard></ProductCard>
-            
-               
-                    <ProductCard></ProductCard>
-                
-            
-                    <ProductCard></ProductCard>
-
-            
-                    <ProductCard></ProductCard>
-            
-        
-                    <ProductCard></ProductCard>
-
+                    {productList.map((product,i)=><ProductCard {...product} key={i}/>)}
+                        
 
 
 

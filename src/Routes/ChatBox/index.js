@@ -43,7 +43,7 @@ const ChatBox = () => {
               (600mm x 300mm x 2mm)
               </div>
             </div>
-
+          <div className="chatbox_container_field">
           <Sendmessage/>
           <Sendmessage/>
           <Recievemessage/>
@@ -66,7 +66,7 @@ const ChatBox = () => {
           <Recievemessage/>
           <Recievemessage/>
           <Recievemessage/>
-
+          </div>
 
 
           </div>

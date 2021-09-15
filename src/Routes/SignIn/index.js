@@ -3,10 +3,28 @@ import './style.css'
 import usericon from './78-user.svg'
 import lockicon from './password-76.svg'
 import fbicon from './facebook-132.svg'
+import { useState } from 'react'
+import postData from '../../Services/postData'
+
+
 
 
 const SignIn = () => {
+
+  const [userName,setUserName ]=useState("")
+  const [password,setPassword ]=useState("")
+
+
+  const logincall=()=>{
+    postData('http://localhost:5000/api/v1/signin', { username: userName,password:password })
+  .then(data => {
+    console.log(data); // JSON data parsed by `data.json()` call
+  });
+
+
+  }
     return (
+
 
       
     <div className="main">
@@ -25,7 +43,7 @@ const SignIn = () => {
                    
                    <div className="user-input-wrp">
                     
-                      <input type="text" class="inputText"  required />
+                      <input type="text" class="inputText"  value={userName} onChange={(e)=>{setUserName(e.target.value)}} required />
         
                       <span className="floating-label">Username</span>
                     </div>
@@ -37,7 +55,7 @@ const SignIn = () => {
                    
                    <div className="user-input-wrp">
                    
-                      <input type="Password" class="inputText"  required />
+                      <input type="Password" class="inputText" value={password} onChange={(e)=>{setPassword(e.target.value)}} required />
         
                       <span className="floating-label">Password</span>
                     </div>
@@ -52,7 +70,7 @@ const SignIn = () => {
 
       <div className="button">
 
-         <button className="Login_btn">Login</button>
+         <button className="Login_btn" onClick={logincall}>Login</button>
       
           <div className="login_fb_button">
             <div className="login_text">
