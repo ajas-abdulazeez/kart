@@ -2,7 +2,7 @@ import "./style.css";
 import productimage from "./images.png";
 import locationicon from "./location.svg";
 
-function ProductCard({product_name,price,product_description}){
+function ProductCard({product_name,price,product_description,seller_name,product_added_date}){
     
 
     return(
@@ -19,18 +19,18 @@ function ProductCard({product_name,price,product_description}){
                 <div className="product_card_name">
                     {product_name}
                 </div>
-                <div className="product_card_price">₹5,199</div>
+                <div className="product_card_price">₹{price}</div>
                 <div className="product_card_rating"></div>
-                <div className="product_card_info">Focus+ 20K DPI Optical Sensor Customizable Chroma RGB Lighting.
+                <div className="product_card_info">{product_description}
                 </div>
                 <div className="product_card_sellerinfo">
                     <div className="product_card_soldby">Sold By : </div>
-                    <div className="product_card_sellerName">Razer.inc</div>
+                    <div className="product_card_sellerName">{seller_name}</div>
                 
                 </div>
                 <div className="product_card_stock"></div>
                 <div className="product_card_footerDetails">
-                    <div className="product_card_date">Added On : 07/08/2021</div>
+                    <div className="product_card_date">Added On : {product_added_date}</div>
                     <div className="product_card_location">
                         <div className="product_card_locationicon">
                         <img src={locationicon} alt="location_icon" height="18px"/>
