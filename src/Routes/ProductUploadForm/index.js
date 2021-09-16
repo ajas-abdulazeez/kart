@@ -9,7 +9,7 @@ const ProductForm = () => {
         const [price,setPrice]=useState("")
         const [quantity,setQuantity ]=useState("")
         const [productDescription,setProductDescription ]=useState("")
-        const [productCategory,setCategory]=userState("")
+        const [productCategory,setCategory]=useState("")
         //const [image,setimage]=useState("")
         
 
@@ -56,8 +56,8 @@ const ProductForm = () => {
             </div></div>
             <div className="uploadimage">
                 Upload Image
-                <input type="image" name="Upload image" /> <input type="image" /> <input type="image" />
-                <input type="image" /> <input type="image" />
+                <input type="file" name="Upload image" /> <input type="file" /> <input type="file" />
+                <input type="file" /> <input type="file" />
             </div>
             
                 <button className="submitbutton" type="submit" onClick={productSumbit}>Submit</button>

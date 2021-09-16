@@ -4,6 +4,7 @@ import locationicon from "./location.svg";
 
 function ProductCard({product_name,price,product_description,seller_name,product_added_date}){
     
+    
 
     return(
         <div className="product_card_container">
