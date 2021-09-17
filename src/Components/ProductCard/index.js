@@ -1,8 +1,9 @@
 import "./style.css";
 import productimage from "./images.png";
 import locationicon from "./location.svg";
+import StarRatings from 'react-star-ratings';
 
-function ProductCard({product_name,price,product_description,seller_name,product_added_date}){
+function ProductCard({product_name,price,seller_name,product_added_date}){
     
     
 
@@ -20,10 +21,13 @@ function ProductCard({product_name,price,product_description,seller_name,product
                 <div className="product_card_name">
                     {product_name}
                 </div>
+                <div className="price_with_rating_contain">
                 <div className="product_card_price">₹{price}</div>
-                <div className="product_card_rating"></div>
-                <div className="product_card_info">{product_description}
-                </div>
+                <div className="product_card_rating"> 
+                    <StarRatings starDimension="20px" starSpacing="3px" rating={3.6} starRatedColor="#1EBAD6"/>(306)
+                                </div>
+                
+                                </div>
                 <div className="product_card_sellerinfo">
                     <div className="product_card_soldby">Sold By : </div>
                     <div className="product_card_sellerName">{seller_name}</div>

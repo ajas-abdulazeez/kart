@@ -1,16 +1,37 @@
 import "./style.css"
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
 import postData from '../../Services/postData'
 
 
 const ProductForm = () => {
 
+        
+        const[categoryList,setCategoryList]=useState([])
+
+        useEffect(()=>{
+        fetch("http://localhost:5000/api/v1/categories")
+        .then(result=>result.json()).then(response=>{
+            
+            if(response){
+                console.log(response)
+                setCategoryList(response)
+                console.log(categoryList)
+                
+            }
+        })
+        
+
+    },[])
+    
+
         const [productName,setProductName ]=useState("")
         const [price,setPrice]=useState("")
         const [quantity,setQuantity ]=useState("")
         const [productDescription,setProductDescription ]=useState("")
-        const [productCategory,setCategory]=useState("")
-        //const [image,setimage]=useState("")
+        const [category,setCategory]= useState("")
+        const [image,setimage]=useState("")
+
+        
         
 
 
@@ -19,7 +40,7 @@ const ProductForm = () => {
         product_name: productName,
         price:price,
         quantity:quantity,
-        category:productCategory,
+        category:category,
         product_description:productDescription
 
     })
@@ -38,9 +59,11 @@ const ProductForm = () => {
               <input className="name_product_box" type="text" value={productName} onChange={(e)=>{setProductName(e.target.value)}} />
             </div>
            <div className="product_category"> Product Category : 
-            <select name="category" id="category">
-                <option value={productCategory} onChange={(e)=>{setCategory ("NULL")}}>NULL</option>
-                <option  value={productCategory} onChange={(e)=>{setCategory ("MOBILES")}}>Mobiles</option>
+            <select name="category" id="category" value={category} onChange={(e)=>{setCategory(e.target.value)}} >
+            <option value="">Select Category</option>
+
+              {categoryList.map((category,i)=><option {...category} key={i}/>)}
+                
             </select>
             <div className="price">
                 Price 
@@ -56,8 +79,9 @@ const ProductForm = () => {
             </div></div>
             <div className="uploadimage">
                 Upload Image
-                <input type="file" name="Upload image" /> <input type="file" /> <input type="file" />
-                <input type="file" /> <input type="file" />
+                
+                <input type="file" name="Upload image"  accept=".jpg" onChange={(e)=>{setimage(e.target.files[0])}} />
+                
             </div>
             
                 <button className="submitbutton" type="submit" onClick={productSumbit}>Submit</button>

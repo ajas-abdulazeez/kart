@@ -51,6 +51,7 @@ h1{
 
 .uploadimage {
     margin: 10px 0;
+    display: flex;
 }
 
 .price_box {
@@ -69,3 +70,4 @@ h1{
 .submitbutton {
     background-color: #1EBAD6;
 }
+
