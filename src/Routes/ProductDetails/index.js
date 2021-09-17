@@ -5,11 +5,58 @@ import Sellerrating from "../../Components/Sellerrating";
 import ProductCard from "../../Components/ProductCard"
 import Product_image from "../../Components/Product_details_image";
 import StarRatings from 'react-star-ratings';
+import { useEffect, useState } from "react";
+import getData from "../../Services/getData";
 
 
 
+const ProductDetails = ({match}) => {
 
-const ProductDetails = () => {
+    const {product_id} = match.params
+    const [ProductData,setProductData] = useState({
+        added_date: "",
+        category: "",
+        price: 0,
+        product_description: "",
+        product_id: "",
+        product_images: "" ,
+        product_name: "",
+        quantity: 0,
+        seller_name: "",
+        sold_quantity: 0,
+        user_id:"" 
+        })
+
+    const {
+        added_date,
+        category,
+        price,
+        product_description,
+        product_images,
+        product_name,
+        quantity,
+        seller_name,
+        sold_quantity,
+        user_id
+        } = ProductData;
+
+
+
+    useEffect(()=>{
+        getData("/viewproducts/"+product_id)
+        .then(response=>{
+    
+            if(response){
+                setProductData(response)
+                
+            }
+            
+        })
+        
+
+    },[])
+    
+
 
     const costomer_rating = [
         {
@@ -43,21 +90,15 @@ const ProductDetails = () => {
             <div className="media_spiller_right">
            
             <div className="product_name">
-                        RiaTech Large Size 
-                        (600mm x 300mm x 2mm)
+                        {product_name}
             </div>
 
             <div className="product_price">Price :<span className="product_details_price">
-            <i class="fa fa-rupee"></i>
-                 1,799.00</span></div>
+            <i className="fa fa-rupee"></i>
+                 {price}</span></div>
 
             <div className="product_deatils_rating"> 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="rating_values">( 100 ) </span>
+            <StarRatings starDimension="28px" starSpacing="3px" rating={2.6} starRatedColor="#1EBAD6"/>
             </div>
             <div className="product_detail_buttons">
                 <button className="product_details_contact_button">Contact</button>
@@ -79,13 +120,7 @@ const ProductDetails = () => {
                 </div>
                 <div className="horizontal_line"></div>
                 <div className="product_details_description">
-                00mm x 300mm x 2mm Large Extended Mouse Pad - 
-                The mouse pad is large
-                enough for your mouse, keyboard and more.
-                It offers plenty of room for gaming
-                or office works all while protecting your desk
-                Heavy duty rubber base prevents it from sliding
-                around on the desk while using it.
+                {product_description}
                 </div>
             </div>
 
@@ -116,8 +151,8 @@ const ProductDetails = () => {
                 <div className="customer_rating_figures"> 4.2 out of 5 stars    <span className="rating_numerical_value">654</span> ratings </div>
                 <div className="cutomer_reviews">
                    
-                   {costomer_rating.map(data => (
-                       <Customerrating costomerData={data}/>
+                   {costomer_rating.map((data,i) => (
+                       <Customerrating costomerData={data} key={i}/>
                    ))}
 
                 </div>

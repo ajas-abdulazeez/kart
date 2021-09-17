@@ -2,13 +2,22 @@ import "./style.css";
 import productimage from "./images.png";
 import locationicon from "./location.svg";
 import StarRatings from 'react-star-ratings';
+import { useHistory } from "react-router";
 
-function ProductCard({product_name,price,seller_name,product_added_date}){
+function ProductCard({product_name,price,seller_name,added_date,product_id}){
     
+    const history = useHistory();
+
+    const parse_date = Date.parse(added_date)
+    let date = new Date(parse_date);
+    const final_date = date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear();
     
 
     return(
-        <div className="product_card_container">
+        <div className="product_card_container" onClick ={()=>{
+            history.push("/details/"+product_id)
+
+        }}>
             
             <div className="centering_object">
             <div className="product_card_image">
@@ -35,7 +44,7 @@ function ProductCard({product_name,price,seller_name,product_added_date}){
                 </div>
                 <div className="product_card_stock"></div>
                 <div className="product_card_footerDetails">
-                    <div className="product_card_date">Added On : {product_added_date}</div>
+                    <div className="product_card_date">Added On : {final_date}</div>
                     <div className="product_card_location">
                         <div className="product_card_locationicon">
                         <img src={locationicon} alt="location_icon" height="18px"/>

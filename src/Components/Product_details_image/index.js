@@ -6,10 +6,10 @@ const Product_image = () => {
     return (
         <div className="product_image_component_section">
             
-                    <div class="numbertext">1 / 5</div>
+                    <div className="numbertext">1 / 5</div>
 
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+                    <a className="prev">&#10094;</a>
+                    <a className="next">&#10095;</a>
             
                 <div className="scroll_bubbles">
                     <div className="scroll_dots"></div>

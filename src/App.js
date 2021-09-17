@@ -12,13 +12,15 @@ import SignIn from "./Routes/SignIn";
 import SignUp from "./Routes/SignUp";
 import ProductForm from "./Routes/ProductUploadForm";
 import Validation from "./Routes/Validation";
+import ScrollToTop from "react-router-scroll-top"
 
 const App = () => {
   
   return (
     <Router>
+      <ScrollToTop>
       <Switch>
-        <Route path="/details" component={ProductDetails}/>
+        <Route path="/details/:product_id" component={ProductDetails}/>
         <Route path="/signin" component={SignIn}/>
         <Route path="/signup" component={SignUp}/>
         <Route path="/chatlist" component={ChatList}/>
@@ -28,7 +30,9 @@ const App = () => {
         <Route path="/" component={Home}/>
        
       </Switch>
+      </ScrollToTop>
     </Router>
+
   );
 }
 

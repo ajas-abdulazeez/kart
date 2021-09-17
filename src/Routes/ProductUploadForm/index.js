@@ -58,13 +58,18 @@ const ProductForm = () => {
            <div className="productname">Name of Product <br />
               <input className="name_product_box" type="text" value={productName} onChange={(e)=>{setProductName(e.target.value)}} />
             </div>
-           <div className="product_category"> Product Category : 
+           <div className="product_category"> Product Category :
+
+
             <select name="category" id="category" value={category} onChange={(e)=>{setCategory(e.target.value)}} >
+            
             <option value="">Select Category</option>
 
-              {categoryList.map((category,i)=><option {...category} key={i}/>)}
+              {categoryList.map((category,i)=><option {...category} key={i}>{category.category_name} </option>)}
                 
             </select>
+
+
             <div className="price">
                 Price 
                 <input className='price_box' type="number" value={price} onChange={(e)=>{setPrice(e.target.value)}} />

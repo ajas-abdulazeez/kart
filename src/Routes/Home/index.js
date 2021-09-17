@@ -12,15 +12,17 @@ import CategoryCard from "../../Components/CategoryCard";
 import RecentProductCard from "../../Components/RecentProductCard";
 import SideNavBar from "../../Components/SideNavBar";
 import { useEffect, useState } from "react";
+import getData from "../../Services/getData";
 
 
 const Home = () => {
 
     const[productList,setProductList]=useState([])
+    
     useEffect(()=>{
-        fetch("http://localhost:5000/api/v1/featured_products")
-        .then(result=>result.json()).then(response=>{
-            
+        getData("/featured_products")
+        .then(response=>{
+    
             if(response){
                 setProductList(response)
             }
@@ -83,8 +85,8 @@ const Home = () => {
                 </div>
                 <div className="categorySection_iconsList">
                     
-                    {CategoryData.map(data => (
-                       <CategoryCard CategoryFunc={data}/>
+                    {CategoryData.map((data,i) => (
+                       <CategoryCard CategoryFunc={data} key={i}/>
                    ))}
 
                 </div>
