@@ -1,6 +1,7 @@
 import "./style.css"
 import { useState , useEffect} from 'react'
 import postData from '../../Services/postData'
+import SendformData from "../../Services/formData"
 
 
 const ProductForm = () => {
@@ -29,21 +30,37 @@ const ProductForm = () => {
         const [quantity,setQuantity ]=useState("")
         const [productDescription,setProductDescription ]=useState("")
         const [category,setCategory]= useState("")
-        const [image,setimage]=useState("")
+        const [image,setimage]=useState([])
+        const [noOfImages,setNoOfImages] = useState(1)
 
+    const fileOnChange=(file,index)=>{
+        let fileList = [...image]
+        fileList[index]=file;
+        setimage(fileList);
+    }
         
         
 
 
   const productSumbit=()=>{
-    postData('http://localhost:5000/api/v1/upload_form', { 
-        product_name: productName,
-        price:price,
-        quantity:quantity,
-        category:category,
-        product_description:productDescription
 
-    })
+    let formData = new FormData(); 
+    
+    for (let i =0 ; i< noOfImages;i++){
+        if (image[i]){
+        formData.append("image"+i,image[i] );
+        }
+    }
+   
+    formData.append("product_name",productName );
+    formData.append("price",price );
+    formData.append("quantity",quantity );
+    formData.append("category",category );
+    formData.append("product_description",productDescription );
+
+
+          
+    SendformData('http://localhost:5000/api/v1/upload_form', formData)
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
   });
@@ -84,8 +101,18 @@ const ProductForm = () => {
             </div></div>
             <div className="uploadimage">
                 Upload Image
+
+                {[...Array(noOfImages)].map(( _, index)=>{
+                    return  <input type="file" name="Upload image"  accept="image/jpeg" 
+                    onChange={(e)=>{fileOnChange(e.target.files[0],index)}} key={index} />
+                })}
+               
                 
-                <input type="file" name="Upload image"  accept=".jpg" onChange={(e)=>{setimage(e.target.files[0])}} />
+                <button onClick ={()=>{
+                    setNoOfImages((prev)=>{
+                        return prev<5 ?  prev+1: 5
+                       })
+                }} >add more files</button>
                 
             </div>
             
