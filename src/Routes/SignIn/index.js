@@ -18,7 +18,7 @@ const SignIn = () => {
   const logincall=()=>{
     postData('http://localhost:5000/api/v1/signin', { username: userName,password:password })
   .then(data => {
-    console.log(data); // JSON data parsed by `data.json()` call
+   
   });
 
 

@@ -11,19 +11,19 @@ function Header() {
         var x=document.getElementsByClassName("dropdown")[0];
         x.classList.toggle("change");
         var y=document.getElementsByClassName("sidebar")[0];
-        console.log("hello");
+      
         y.classList.toggle("nav");
       }
       
     function searchbarDisplay(){
             var y=document.getElementsByClassName("searchsection")[0];
-            console.log("search successfully loaded");
+           
             y.style.display = "flex";
           }
 
           function searchbarDisplayclose(){
             var y=document.getElementsByClassName("searchsection")[0];
-            console.log("search successfully loaded");
+           
             y.style.display = "none";
           }
     

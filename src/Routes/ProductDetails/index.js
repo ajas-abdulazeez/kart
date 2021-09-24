@@ -3,6 +3,7 @@ import Customerrating from "../../Components/Customerrating";
 import Footer from "../../Components/Footer";
 import Sellerrating from "../../Components/Sellerrating";
 import ProductCard from "../../Components/ProductCard"
+
 import Product_image from "../../Components/Product_details_image";
 import StarRatings from 'react-star-ratings';
 import { useEffect, useState } from "react";
@@ -12,14 +13,20 @@ import getData from "../../Services/getData";
 
 const ProductDetails = ({match}) => {
 
-    const {product_id} = match.params
+    const [productId, setProductId] = useState(match.params.product_id)
+    useEffect(() => {
+       
+        setProductId(match.params.product_id)
+        
+        
+    }, [match.params.product_id])
+
     const [ProductData,setProductData] = useState({
         added_date: "",
         category: "",
         price: 0,
         product_description: "",
-        product_id: "",
-        product_images: "" ,
+        product_images: [] ,
         product_name: "",
         quantity: 0,
         seller_name: "",
@@ -40,22 +47,41 @@ const ProductDetails = ({match}) => {
         user_id
         } = ProductData;
 
-
+       
 
     useEffect(()=>{
-        getData("/viewproducts/"+product_id)
+        getData("/viewproducts/"+productId)
         .then(response=>{
     
             if(response){
-                setProductData(response)
+             
+                setProductData({...response,
+                product_images:JSON.parse(response.product_images)})
                 
             }
             
         })
         
 
-    },[])
+    },[productId])
     
+
+    const [relatedProductList,setRelatedProductList]=useState([])
+    
+    useEffect(()=>{
+       
+        getData("/related_products/" +productId)
+        .then(response=>{
+          
+    
+            if(response){
+                setRelatedProductList(response)
+            }
+        })
+        
+
+    },[productId])
+
 
 
     const costomer_rating = [
@@ -83,8 +109,9 @@ const ProductDetails = ({match}) => {
             <div className="media_splitter">
 
             <div className="product_image_componet">
-            <Product_image/>
+            <Product_image imageList = {product_images}/>
 
+           
             </div>
 
             <div className="media_spiller_right">
@@ -132,8 +159,9 @@ const ProductDetails = ({match}) => {
 
                 <div className="related_products_description">
 
-                    <ProductCard/>
-                    <ProductCard/>
+                {relatedProductList.map((relatedProduct,i)=><ProductCard {...relatedProduct} key={i}/>)}
+
+                        
 
                     
 

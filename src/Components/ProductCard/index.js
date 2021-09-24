@@ -4,13 +4,16 @@ import locationicon from "./location.svg";
 import StarRatings from 'react-star-ratings';
 import { useHistory } from "react-router";
 
-function ProductCard({product_name,price,seller_name,added_date,product_id}){
+function ProductCard({product_name,price,seller_name,added_date,product_id,product_images}){
     
     const history = useHistory();
+
+    
 
     const parse_date = Date.parse(added_date)
     let date = new Date(parse_date);
     const final_date = date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear();
+   
     
 
     return(
@@ -21,7 +24,10 @@ function ProductCard({product_name,price,seller_name,added_date,product_id}){
             
             <div className="centering_object">
             <div className="product_card_image">
-                 <img src={productimage} alt="product_image"  width="100%" />
+                
+                {product_images[0] ? <img src={ `http://localhost:5000/${product_images[0]}`} alt="product_image" width="100%" height="100%"/>     
+                 : <img src={productimage} alt="product_image"  width="100%" />}
+                
             </div>
             <div className="product_card_details">
 

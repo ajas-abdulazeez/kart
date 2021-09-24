@@ -14,9 +14,9 @@ const ProductForm = () => {
         .then(result=>result.json()).then(response=>{
             
             if(response){
-                console.log(response)
+                
                 setCategoryList(response)
-                console.log(categoryList)
+          
                 
             }
         })
@@ -62,7 +62,7 @@ const ProductForm = () => {
           
     SendformData('http://localhost:5000/api/v1/upload_form', formData)
   .then(data => {
-    console.log(data); // JSON data parsed by `data.json()` call
+   
   });
 
 
