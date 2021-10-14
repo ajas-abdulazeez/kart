@@ -1,12 +1,54 @@
 import usericon from './78-user.svg'
 import './style.css'
+import { useState , useEffect} from 'react'
 import confirm from './confirm-password.svg'
 import mobile from './telephone-64.svg'
 import verification from './verification-code-17.svg'
 import lock from './password-76.svg'
 import fbicon from './facebook-132.svg'
+import postData from '../../Services/postData'
 
-const SignUp = () => {
+
+
+
+const SignUp = ({history}) => {
+
+  const [username,setUserName]=useState("")
+  const [phone,setPhone]=useState("")
+  const [email,setEmail]=useState("")
+  const [password,setPassword]=useState("")
+  const [confirmpassword,setConfirmPassword]=useState("")
+
+  
+
+
+  
+
+  const signupcall=(e)=>{
+    e.preventDefault()
+    if (password == confirmpassword) {
+
+      console.log(email)
+
+    const signupformData = { username,phone,email,password }
+
+    console.log(signupformData)
+
+
+
+
+    postData('http://localhost:5000/api/v1/signup', signupformData )
+  .then(data => {
+   
+  });
+}
+else 
+{
+  console.log("passwords does not match")
+}
+  }
+
+
     return (
         <div className="main">
 
@@ -20,6 +62,10 @@ const SignUp = () => {
             </div>
           </div>
             <div className="contaier_box">
+
+
+              <form onSubmit = {signupcall} >
+
                 <div className="name_container">
                    <div className="user_icon">
                      <img src={usericon} alt="" />
@@ -27,7 +73,7 @@ const SignUp = () => {
                    
                    <div className="user-input-wrp">
                     
-                      <input type="text" class="inputText"  required />
+                      <input type="text" class="inputText" value={username} onChange={(e)=>{setUserName(e.target.value)}} required />
         
                       <span className="floating-label">Username</span>
                     </div>
@@ -40,24 +86,26 @@ const SignUp = () => {
                    
                    <div className="user-input-wrp">
                     
-                      <input type="text" class="inputText"  required />
+                      <input type="text" class="inputText"  value={phone} onChange={(e)=>{setPhone(e.target.value)}} required />
         
                       <span className="floating-label">Mobile</span>
                     </div>
                 </div>
 
+          {/* email */}
                 <div className="name_container">
                    <div className="user_icon">
-                     <img src={verification} alt="" />
+                     <img src={mobile} alt="" />
                    </div>
                    
                    <div className="user-input-wrp">
                     
-                      <input type="text" class="inputText"  required />
+                      <input type="text" class="inputText"  value={email} onChange={(e)=>{setEmail(e.target.value)}} required />
         
-                      <span className="floating-label">4 digit code</span>
+                      <span className="floating-label">Email</span>
                     </div>
                 </div>
+
 
                 <div className="name_container">
                    <div className="user_icon">
@@ -66,7 +114,7 @@ const SignUp = () => {
                    
                    <div className="user-input-wrp">
                    
-                      <input type="Password" class="inputText"  required />
+                      <input type="Password" class="inputText"  value={password} onChange={(e)=>{setPassword(e.target.value)}} required />
         
                       <span className="floating-label">Password</span>
                     </div>
@@ -79,17 +127,19 @@ const SignUp = () => {
                    
                    <div className="user-input-wrp">
                     
-                      <input type="text" class="inputText"  required />
+                      <input type="password" value={confirmpassword} onChange={(e)=>{setConfirmPassword(e.target.value)}} class="inputText"  required />
         
                       <span className="floating-label">Confirm password</span>
                     </div>
                 </div>
                 
                 <div className="button">
-                <button className="Create_account_btn">Create an Account</button>
-
+                <button type="submit" className="Create_account_btn">Create an Account</button>
+              
                 <div className="login_here">
-                Already have an account?<span className="here"> Login</span>
+                Already have an account?<span onClick={()=>{
+                  history.push("/signin")
+                }} className="here"> Login</span>
                 </div>
 
                 <div className="signup_fb_button">
@@ -100,7 +150,7 @@ const SignUp = () => {
                 </div>
                 </div>
 
-
+                </form>
             </div>
 
 

@@ -1,7 +1,8 @@
 import "./style.css"
 import { useState , useEffect} from 'react'
-import postData from '../../Services/postData'
 import SendformData from "../../Services/formData"
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 
 const ProductForm = () => {
@@ -69,6 +70,7 @@ const ProductForm = () => {
   }
     return (
      <div>
+        <Header/>
          <h1>Product Details</h1>
 
          <div className="basic_details">
@@ -122,6 +124,7 @@ const ProductForm = () => {
         
 
          </div>
+         <Footer/>
          </div>
     )
 }
